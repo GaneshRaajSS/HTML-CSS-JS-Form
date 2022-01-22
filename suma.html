@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+  <link rel="stylesheet" href="ccc.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="heading">
+      <h1 style="background-color: #fff">Form</h1>
+      <div class="Subhead">
+        <h3 style="background-color: #fff">
+          "Everyone who is born in this great land has only one identity - we
+          all are Indians" - Mahatma Gandhi
+        </h3>
+      </div>
+      <p style="background-color: #fff; margin: 20px">
+        students who are interested complete the form below carefully for
+        registration.
+      </p>
+      <div class="Disc">
+        <p style="background-color: #fff">1. Essay Writing - MY PATRIOTIC FEELING FOR MY NATION</p>
+        <p style="background-color: #fff">2. Speech - FORGOTTEN FREEDOM FIGHTERS</p>
+        <p style="background-color: #fff">3. Doodle - INTEGRITY & SOVEREIGNTY</p>
+        <p style="background-color: #fff">4. Poem - COURAGE & BRAVENESS</p>
+      </div>
+    </div>
+    <form>
+      <div class="container"></div>
+      <div class="Fname">
+        <label style="
+              background-color: #fff;
+              margin-bottom: 10px;
+              margin-top: -10px;
+            ">First Name</label>
+        <input type="text" id="FName" placeholder="Enter your First Name" style="width: fit-content;margin-left: 0;
+              background-color: #fff;
+              border-style: none;
+              border-bottom: groove;
+              border-bottom-width: thin;
+            " />
+      </div>
+      <div class="Lname">
+        <label style="
+              background-color: #fff;
+              margin-bottom: 15px;
+              margin-top: -10px;
+            ">Last Name</label>
+        <input type="text" id="LName" placeholder="Enter your Last Name" style="width: fit-content;margin-left: 0;
+              background-color: #fff;
+              border-style: none;
+              border-bottom: groove;
+              border-bottom-width: thin;
+            " />
+      </div>
+      <div class="Email">
+        <label style="
+              background-color: #fff;
+              margin-bottom: 10px;
+              margin-top: -10px;
+            ">Email</label>
+        <input type="text" id="Email" placeholder="Enter your Email" style="width: fit-content;margin-left: 0;
+              background-color: #fff;
+              border-style: none;
+              border-bottom: groove;
+              border-bottom-width: thin;
+            " />
+      </div>
+      <p id="UserInput"></p>
+      <div class="Year" id="option1">
+        <label style="background-color: #fff">Year</label>
+        <select>
+          <option name="Year" style="color: #dadce0; background-color: #fff">
+            Year
+          </option>
+          <option value="Ist Year" style="background-color: #fff">
+            Ist Year
+          </option>
+          <option value="IInd Year" style="background-color: #fff">
+            IInd Year
+          </option>
+          <option value="IIIrd Year" style="background-color: #fff">
+            IIIrd Year
+          </option>
+          <option value="IVth Year" style="background-color: #fff">
+            IVth Year
+          </option>
+        </select>
+      </div>
+      <div class="Dept" id="option1">
+        <label style="background-color: #fff">DEPT</label>
+        <select>
+          <option name="Dept" style="color: #dadce0; background-color: #fff; color: #dadce0">
+            Dept
+          </option>
+          <option value="CSE" style="background-color: #fff">CSE</option>
+          <option value="IT" style="background-color: #fff">IT</option>
+          <option value="MECH" style="background-color: #fff">MECH</option>
+          <option value="CIVIL" style="background-color: #fff">CIVIL</option>
+        </select>
+      </div>
+      <div class="Rbutton">
+        <label id="option2" style="background-color: #fff;margin-bottom: 10px;">Willing to participate in the following
+          competitions?</label>
+        <input type="radio" name="competitions" style="height: 15px;"/>Essay
+        <input type="radio" name="competitions" style="height: 15px;"/>Speech
+        <input type="radio" name="competitions" style="height: 15px;"/>Doodle
+        <input type="radio" name="competitions" style="height: 15px;"/>Poem
+      </div>
+      <div class="Cbox">
+        <label for="personalInt" style="font-weight: bolder;background-color: #fff;">What do you know?
+          <input id="Design" value="UI/UX" type="checkbox" name="personalInt" style="height: 15px;">UI/UX
+          <input id="Design" value="React" type="checkbox" name="personalInt" style="height: 15px;">React
+          <input id="Design" value="ReactNative" type="checkbox" name="personalInt" style="height: 15px;">ReactNative
+          <input id="Design" value="Figma" type="checkbox" name="personalInt" style="height: 15px;">Figma
+          <input id="Design" value="Flutter" type="checkbox" name="personalInt" style="height: 15px;">Flutter
+        </label>
+      </div>
+        <button type="submit" onclick="MyFunc()" id="Sbutton">Submit</button>
+        <button type="reset" onclick="myFunc()"id="Cbutton">Clear</button>
+
+    </form>
+  </div>
+  <script src="sss.js"></script>
+</body>
+</html>
