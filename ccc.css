@@ -111,6 +111,7 @@
   background-color: white;
   font-weight: bolder;
   height: 200px;
+  justify-content: center;
 }
 .Cbox{
   display: flex;
@@ -125,6 +126,20 @@
   font-weight: bolder;
   height: 200px;
 }
+.button{
+  display: flex;
+  margin-bottom: 50px;
+  display: flex;
+  width: 675px;
+  align-items: flex-end; 
+  justify-content: start;
+}
+.button button{
+  width: 100px;
+  align-items: flex-start;
+  justify-content: end;
+  margin-left: 500px;
+}
 #Sbutton{
   width: 120px;
   height: 40px;
@@ -135,15 +150,27 @@
   color: #fff;
 }
 #Cbutton{
-  width: 120px;
-  height: 40px;
-  margin-left: 550px;
-  margin-top: -30px;
-  padding-bottom: 50px;
-  display: table;
   border-style: none;
   font-size: medium;
   font-weight: 500;
   font-family:"Google Sans",Roboto,Arial,sans-serif;
   color: #673ab7;
+  align-items: center;
+  padding: 5px;
+  width: 60px;
+}
+.btn::after{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 0.175rem;
+  background: #673ab6;
+  margin-left: -43px;
+  margin-top: 20px;
+  transform: scale(0,1);
+  transition: transform 0.3s ease-in;
+}
+.btn:hover::after{
+  transform: scale(1,1);
+  cursor: pointer;
 }

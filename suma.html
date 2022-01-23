@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="main" >
     <div class="heading">
       <h1 style="background-color: #fff">Form</h1>
       <div class="Subhead">
@@ -105,15 +105,15 @@
         </select>
       </div>
       <div class="Rbutton">
-        <label id="option2" style="background-color: #fff;margin-bottom: 10px;">Willing to participate in the following
+        <label id="option" style="background-color: #fff;margin-bottom: 10px;">Willing to participate in the following
           competitions?</label>
-        <input type="radio" name="competitions" style="height: 15px;"/>Essay
-        <input type="radio" name="competitions" style="height: 15px;"/>Speech
-        <input type="radio" name="competitions" style="height: 15px;"/>Doodle
-        <input type="radio" name="competitions" style="height: 15px;"/>Poem
+        <input type="radio" name="competitions"  style="height: 15px;"/>Essay
+        <input type="radio" name="competitions"  style="height: 15px;"/>Speech
+        <input type="radio" name="competitions"  style="height: 15px;"/>Doodle
+        <input type="radio" name="competitions"  style="height: 15px;"/>Poem
       </div>
       <div class="Cbox">
-        <label for="personalInt" style="font-weight: bolder;background-color: #fff;">What do you know?
+        <label id="personalInt" style="font-weight: bolder;background-color: #fff;">What do you know?
           <input id="Design" value="UI/UX" type="checkbox" name="personalInt" style="height: 15px;">UI/UX
           <input id="Design" value="React" type="checkbox" name="personalInt" style="height: 15px;">React
           <input id="Design" value="ReactNative" type="checkbox" name="personalInt" style="height: 15px;">ReactNative
@@ -121,9 +121,10 @@
           <input id="Design" value="Flutter" type="checkbox" name="personalInt" style="height: 15px;">Flutter
         </label>
       </div>
-        <button type="submit" onclick="MyFunc()" id="Sbutton">Submit</button>
-        <button type="reset" onclick="myFunc()"id="Cbutton">Clear</button>
-
+      <div class="button">
+        <button  type="submit" onclick="MyFunc()" id="Sbutton">Submit</button>
+        <button type="reset"  class="btn" onclick="myFunc()"id="Cbutton">Clear</button>
+      </div>
     </form>
   </div>
   <script src="sss.js"></script>
